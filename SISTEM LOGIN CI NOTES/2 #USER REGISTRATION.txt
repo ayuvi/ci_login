@@ -1,0 +1,37 @@
+CREATE DATABASE ci-login
+
+- create table user
+- insert field id,name,email,image,password,role id,is_active,date created
+- create table user role (id,role)
+- insert role admin dan member
+
+- open view registration
+- tambahkan method post dan arahkan action ke auth/registration pada form
+- kirim data title dan kirimkan ke header
+- echo title di header
+
+- tambahkan construct library validation
+- tambahkan kondisi validation di function registration
+- jika validasi berjalan == false load view registration
+- else echo berhasil di tambahkan (test)
+- set_rule form_validation (test lagi)
+- tambahkkan form eror di input view registration
+- tambahkan set value di tiap tiap input
+- test 
+
+- jika sukses , siapkan data array yang isi nya sesuai dengan database
+- this input post ke field masing masing
+- untuk image berikan 'default.jpg'
+- gunakan pasword_hash untuk input post password
+- role id default nya 2, is active default 1
+- date created di isi dengan fungsi time
+- insert ke table user dgn query builder
+- ubah konfigurasi pada database.php sesuaikan
+- tambahkan autoload libraries , database
+- redirect ke auth
+- cek pada table user
+
+- tambahkan session flash data sebelum redirect ke login
+- tambahkan judul login page pada function index
+- open views login
+- tambahkan flash data message di login page

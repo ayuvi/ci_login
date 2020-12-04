@@ -1,0 +1,50 @@
+create user page
+
+- arahkan ke view user/index pada function index
+- create views user/index4
+- copy blank.html
+- arahkan css & js ke base_url assets/ (test web)
+- ganti title
+- ganti judul di sidebar
+- rubah icon cari di font awesome
+- copy heading simpan di atas dashboard rename menjadi administrator
+- hapus my-0
+- ganti interface mjd user
+- hapus nav item collapse
+- rename chart menjadi my profile
+- hapus semua yang di bawah sisakan tombol
+- rubah icon chart
+- tambahkan fa-fw di class icon
+- hapus topbar search
+- hapus search icon xs
+- hapus alerts
+- hapus messages
+- kirim $data , ganti nama dgn $user['name']
+- tambahkan data title
+
+- create folder profile di folder image , simpan gambar default.jpg
+- panggil img base url ambil data data $user['img']
+- arahkan href ke base url logout , tambahkan jg di modal (test)
+- tambahkan divider dan tombol logout di sidebar , rubah icon logout
+- ganti blankpage menjadi $title
+- tambahkan card dari bootstrap
+- ganti gambar dari $user['image']
+- title ganti dengan user[name] , user email, date
+- rubah footer
+
+- pecah halaman header and footer
+- buat file header and footer di dalam footer
+- create side bar , cut side bar
+- create top bar , cut top bar
+
+- create controller admin
+- copy isi controller user lalu edit isi
+- ubah view ke admin/index
+- create folder admin/index
+- copy dari user.php
+- test
+
+- rubah redirect di method function
+- jika role_id == 1 redirect ke admin
+- selain 1 masuk ke user
+- test

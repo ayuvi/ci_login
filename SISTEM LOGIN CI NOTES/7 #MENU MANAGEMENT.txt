@@ -1,0 +1,59 @@
+- insert data menu baru "menu"
+- tambahkan access menu admin ke menu
+- create controller menu.php
+- copy class admin sesuaikan mjd menu
+- copy method index admin
+- sesuaikan title dan view
+- create views folder menu & index.php
+- copy dari index admin
+- insert menu management di tamble user sub menu
+
+- tambahkan kondisi pada nav-item di navbar
+- jika judul = judul foreach nav item active
+- jika tidal nav item biasa
+
+- open menu/index
+- tambahkan row dan kolom lg 6
+- copy table hover dari bootstrap
+- sesuaikan heading
+- hapus tr sisakan 1
+- hapus satu td
+
+- parsing data dari table user menu di controller menu (db get user_menu)
+- looping di table
+- tanbahkan tombol edit & delete
+- tambahkan tombol add new menu di atas table
+- tambahkan modal dari bootstrap untuk add menu simpan di paling bawah dari index
+- copy data toggle dan data target ke tombol add di atas
+- hapus button pada modal
+- sesuaikan id pada modal
+- bungkus body modal dengan form
+- ganti type buttin dengan submit
+- insert from group ke dalam modal body , hapus label nya, sesuaikan id ,name
+- tambahkan form url ke base url menu
+
+- tambahkan form validasi di method index pada controller menu
+- tambahkan form validation pada autoload , libraries
+- buatkan rules validation 
+- tambahkn form erorr di atas tombol (test)
+- jika berhasil insert ke table user menu
+- copy pesan dari controller auth, redirect ke controller menu
+- tambahkan session flash data
+- test add
+
+- tambahkan method submenu
+- copy isi dari menu management
+- edit dan sesuaikan isi
+- insert submenu management dari database
+- create file submenu.php
+- copy dari index menu
+- sesuaikan isi nya
+- parsing data subMenu dari method submenu
+- load model Menu_model as menu
+- create model menu_model
+- bikin function getSubMenu
+- declar var query
+- ambil semua data sub menu dan nama menu dari user manu, dari user sub menu join dengan user menu on menu_id = id
+- return query result array
+- edit pada view , menu_id rubah menjadi menu
+- sesuaikan modal edit id pada modal, base_url, form group

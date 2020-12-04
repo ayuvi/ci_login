@@ -1,0 +1,61 @@
+MEMBUAT SISTEM LOGIN CI
+
+komponen : 
+- download CI 3
+- bootstrap
+- SBadmin-2
+- font awesome
+
+step 1 :
+- download SB Admin 2 lalu extract 
+- download codeigniter 3.1.10 extract simpan ke htdocs beri nama file CI-login
+- create folder assets
+- create folder vendor
+- cut template sb admin simpan ke vendor
+- jalankan localhost ci-login nya
+
+code :
+- open vscode ci-login
+- open config.php lalu setup base_url
+- hapus index.php
+- create file .htaccess
+- copy removing index.php di dokumentasi CI
+- open autoload tambahkan library (database,email,session)
+- tambahkan helper (url, file, security)
+- test browser
+- hapus dulu library database
+
+- open routes
+- rubah default controller ke auth
+- create Auth controller
+- buat class controller auth
+- create function index tesr dengan echo 'auth/index'
+- load view 'auth/login' di function index
+- create views auth/login.php
+- copy login.html dari sb admin
+- copy folder css,img,js,vendor dari sb admin ke assets
+- tambahkan di tiap href <?=base_url('assets/');?>
+
+- edit view untuk hapus gambar
+- ganti kolom menjadi 7 
+- edit form group email rubah id dan tambahkan name=email
+- edit form group password
+- hapus remember me
+- ganti link a login menjadi button
+- ganti href login menjadi type = submit
+- happus login with facebook & google
+- hapus hr di bawah buttin login
+
+- tambahkan view templates auth_header & auth footer pada controller auth/index
+- tambahkan folder templates/tambahkan file header & footer pada view
+- cut header & footer ke masing masing dari login.php
+
+- buat method registration di con auth
+- copy loaf view login , arahkan ke registration
+- create registration.php cut dari registration.html
+- hapus header & footer nya
+- test browser auth/registration
+- edit tampilan & sesuaikan
+- sesuaikan tampilan form-group
+- ganti tombol register accunt menjadi button type submit
+- arahkan already account ke auth (login juga)

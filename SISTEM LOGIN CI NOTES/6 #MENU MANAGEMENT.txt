@@ -1,0 +1,30 @@
+- membuat table user_menu (id,menu)
+- insert data admin & user
+- create table user_sub_menu (id,menu_id,title,url,icon,is_active)
+- save , insert data sub_menu admin & user
+- create table user_access_menu(id, role_id, menu_id)
+- insert test
+
+- open sidebar
+- qwery menu di bawah divider yg pertama
+- sql join table deklarasi ke dalam var queryMenu
+- tampilkan id dan menu user menu , dari user menu join ke user access menu dimana role id = role id yang sedang login , urutkan berdasarkan menu_id
+- deklarasikan db->query result ke dalam var menu
+- test var menu dengan var dump
+
+looping menu
+- foreach menu 
+
+siapkan sub menu sesuai menu
+-  declar ke var querysubmenu
+- tampilkan semua data dari user sub menu join dengan user menu , dimana menu_id user sub menu sama dengan menu id yang sedang login dan is_active = 1
+- declar query result array
+- foreach sub menu
+- cut nav item masukan ke dalam foreach submenu
+- arahkan base urul ke submenu url
+- tambahkan sm icon
+- tambahkan sm span
+- cut divider masukan ke foreach
+- hapus menu yg tidak dari looping
+- hapus divider di luar foreach
+- test insert menu edit profile di dalam menu user

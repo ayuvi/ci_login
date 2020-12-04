@@ -1,0 +1,28 @@
+1. cek email di dalam table
+- tambahkan validasi di method login/index
+- tambahkan rules form email & password
+- tambahkan form eror di dalam input login
+- tambahkan method dan action di form login
+- test browser
+- jika sukses mengakses ke method _login();
+- buat private function login
+- ambil email dan password yang sudah lolos validasi taruh di variable masing masing
+- ambil data user query ke database select * from table user where email = $email ambil satu baris row_array
+- test browser (var dump)
+- tambahkan value di form login
+
+- tambahkan kondisi jika $user ada, kalo ga ada kasih pesan eror not registered (test)
+- kondisi lagi jika user nya aktif if is active ==1, jika ga ada eror email hnot been activated (test) 
+- cek password nya dengan password verifiy (password input = password data), jika tidak error wrong password
+- jika benar siapkan data email & role_id
+- simpan ke dalam session
+- redirect ke halaman user
+- buat controller user
+- create method default index
+- echo selamat datang user -> test
+
+- ambil data user dari session tampilkan nama nya di controller user
+- create function logout
+- unset session userdata email & role id
+- tambahkan flash data dan redirect ke auth
+- test /logout
