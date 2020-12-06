@@ -1,0 +1,25 @@
+- buka sidebar tambahkan pb-0 pada nav link menu
+- kasih mt-3 pada divider
+
+- Tamgahkan sub menu baru ( role , di menu admin)
+- tambahkan method baru pada admin
+- method role , copy dari method admin & sesuaikan isi nya'
+- create view admin/role
+- copy dari index menu
+- sesuaikan isi nya
+- parsing query data role , ambil semua dari database
+- tambahkan tombol acces di sebelah edit
+- arahkan ke base url admin/roleaccess/ concate degan $r['id']
+
+- tambahkan method roleaccess cpy dari method role dengan parameter $role_id
+- ambil semua data menu simpan di data menu untuk di parsing
+- create role-access view
+- copy dari role view
+- sesuaikan isi nya
+- tambahkan check_access pada check box
+- buat fungsi nya di yuvi helper
+- jangan tampilkan admin di user
+- tambahkan data role dan data menu pada checkbox untuk jquery
+
+- tambahkna jquery pada footer
+- tambahkan method changeAccess

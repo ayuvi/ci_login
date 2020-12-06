@@ -43,19 +43,24 @@
 				?>
 
 					<?php foreach ($subMenu as $sm) :?>
+					<?php if($title == $sm['title']) :?>
+						 <li class="nav-item active">
+						 <?php else : ?>
 						 <li class="nav-item">
-                			<a class="nav-link" href="<?= base_url($sm['url']); ?>">
+						 <?php endif; ?>
+                			<a class="nav-link pb-0" href="<?= base_url($sm['url']); ?>">
                     		<i class="<?= $sm['icon'];?>"></i>
                     		<span><?= $sm['title']; ?></span></a>
             			</li>
 					<?php endforeach; ?>
 
-				 <hr class="sidebar-divider">
+				 <hr class="sidebar-divider mt-3">
 
 			 <?php endforeach; ?>
             
            			
             <!-- Nav Item - Charts -->
+
             <li class="nav-item mb-3">
                 <a class="nav-link" href="<?= base_url('auth/logout');?>">
                     <i class="fas fa-fw fa-sign-out-alt"></i>

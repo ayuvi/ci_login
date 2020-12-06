@@ -29,7 +29,7 @@ code :
 - rubah default controller ke auth
 - create Auth controller
 - buat class controller auth
-- create function index tesr dengan echo 'auth/index'
+- create function index test dengan echo 'auth/index'
 - load view 'auth/login' di function index
 - create views auth/login.php
 - copy login.html dari sb admin

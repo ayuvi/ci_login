@@ -1,0 +1,12 @@
+// 
+- Buat function constructor pada controller admin yang isi nya jika ga ada session user data email , kembalikan ke halaman auth
+- copy juga ke contr user & menu
+- ganti dengan function is_logged_in() 
+- create files helper
+- tambahkan helper tersebut pada autoload
+- create function is_logged_in
+- buat function blocked pada auth
+- copy 404 ke view baru blocked di dalam auth
+- panggil load view dari method blocked
+- sesuaikan isi view nya (base url)
+- hapus sidebar, topbar,
