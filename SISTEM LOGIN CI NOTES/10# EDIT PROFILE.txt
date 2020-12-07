@@ -1,0 +1,31 @@
+# perbaikan
+- tambahkan jika session sudah ada balikan ke user pada method index dan registration auth
+
+# start edit profile
+- create function edit di user controler
+- copy dari index , sesuaikan isi nya
+- create views user/edit.php
+- copy outline admin/index
+- bikin row, col-lg-8,
+- tambahkan form_open_multipart sebagai pengganti form action html
+- arahkan ke user/edit
+- buka get bootstrap , cari forms, cari horizontal form
+- copy 1 div
+- create form untuk email dan full name
+- dan form upload picture
+- ke bootstrap cari file browser copy le form picture
+- tambahkan value di tiap tiap form
+- arahkan ke assets img profile
+- tambahkan script jquery untuk nama pilih file
+
+- taqmbahkan form validation di method edit
+- tambahkan rules
+- copy form eror dari login simpan di bawah input edit
+- insert jika validasi sesuai
+- copy flash data,redirect ke user
+- tambahkan flash messages di user/index
+
+- cek jika ada gambar yang akan di upload
+- tambahkan setting preferences
+-tambahkan library upload dan do upload
+- 
