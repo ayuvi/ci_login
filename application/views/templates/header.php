@@ -17,9 +17,13 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+	<!-- Custom styles for this template-->
+	
     <link href="<?= base_url('assets/');?>css/sb-admin-2.min.css" rel="stylesheet">
-
+	<script type="text/javascript" src="<?= base_url() . 'assets/js/crud_operation.js'?>"></script>
+	<script type="text/javascript" src="<?= base_url() . 'assets/js/dataTables.bootstrap4.js'?>"></script>
+	<script type="text/javascript" src="<?= base_url() . 'assets/js/jquery-3.5.1.min.js'?>"></script>
+	<script type="text/javascript" src="<?= base_url() . 'assets/js/jquery.dataTables.js'?>"></script>
 </head>
 
 <body id="page-top">
